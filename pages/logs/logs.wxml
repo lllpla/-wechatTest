@@ -1,0 +1,14 @@
+<!--logs.wxml-->
+<view class="page">
+  <button class=".weui-btn mini-btn" bindtap="clearLogs" type="warn">清除日志</button>
+  <view class="page__hd">
+    <view class="page__title">List</view>
+    <view class="page__desc">日志列表</view>
+  </view>
+  <block wx:for="{{logs}}" wx:for-item="log" wx:key="{{index+1}}">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">{{index + 1}}</view>
+      <view class="weui-cell__ft">{{log}}</view>
+    </view>
+  </block>
+</view>

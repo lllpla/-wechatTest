@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/record/record"
+  ],
+  "window": {
+    "backgroundTextStyle": "border",
+    "navigationBarBackgroundColor": "#003366",
+    "navigationBarTitleText": "小程序测试",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#003366",
+    "selectedColor": "#33FFFF",
+    "color": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "目录"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "记录加班"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "加班历史"
+      }
+    ]
+  }
+}

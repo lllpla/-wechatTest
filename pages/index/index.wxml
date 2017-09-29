@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="weui-cell" id="pbsLogo">
+    <image src="/resources/pbsimage.png" mode="widthFix"></image>
+  </view>
+  <view class="weui-cell">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">请先进行授权</button>
+    <block wx:else>
+      <view class="weui-cell__hd" id="image1">
+        <image src="{{userInfo.avatarUrl}}" style="margin-right: 5px;vertical-align: middle;width:40px; height: 40px;"></image>
+      </view>
+      <view class="weui-cell__bd">{{userInfo.nickName}}</view>
+      <view class="weui-cell__ft">已登录</view>
+    </block>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__bd">
+      <view>手机品牌</view>
+      <view style="font-size: 13px;color: #888888;">{{sysInfo.brand}}</view>
+    </view>
+  </view>
+    <view class="weui-cell">
+    <view class="weui-cell__bd">
+      <view>手机型号</view>
+      <view style="font-size: 13px;color: #888888;">{{sysInfo.model}}</view>
+    </view>
+  </view>
+      <view class="weui-cell">
+    <view class="weui-cell__bd">
+      <view>分辨率</view>
+      <view style="font-size: 13px;color: #888888;">{{sysInfo.screenWidth}}x{{sysInfo.screenHeight}}</view>
+    </view>
+  </view>
+  <button class="weui-btn" type='normal' bindtap="bindRecord">记录加班</button>
+  <button class="weui-btn" type='normal' bindtap="bindLog">查看历史</button>
+</view>

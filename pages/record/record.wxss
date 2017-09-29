@@ -1,0 +1,6 @@
+/* pages/record/record.wxss */
+
+.weui-cell__hd image{
+    border: solid #33CCFF 5rpx;
+    border-radius: 50%;
+}

@@ -1,0 +1,14 @@
+/**index.wxss**/
+.weui-cell__hd image{
+    border: solid #33CCFF 5rpx;
+    border-radius: 50%;
+}
+
+
+#pbsLogo{
+  align-content: center;
+}
+/**设置logo居中**/
+#pbsLogo image{
+  margin:0 auto;
+}
